@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    font-weight: 500;
+    src: url('/myFonts/static/RobotoSlab-Regular.ttf');
+    }
+ body
+    {
+        width: 375px;
+        margin: 0px auto;
+        max-width: 100%;
+        font-family: "RobotoSlab-Regular";
+        font-size :16px;
+    }
+    .main-container
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    article
+    {
+        background-color: rgb(236, 236, 236);
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .row1{
+        width: 100%;
+        display: flex;
+        align-items:center ;
+        justify-content: space-between; 
+        margin-bottom: 5px;
+    }
+    .path
+    {
+        text-decoration: none;
+        color: gray;
+    }
+    .addProject
+    {
+        text-decoration: none;
+        background-color: #47cdff;
+        border: 1px solid #47cdff;
+        border-radius: 5px;
+        width: 90px;
+        padding: 2px;
+        color: white;
+    }
+    aside
+    {
+        background-color: rgb(240, 240, 240);
+        padding: 8px;
+    }
+    .activity{
+        display: flex;
+        align-items:center ;
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+    .div-one{
+        display:block ruby;
+    }
+    
+    @media screen and (min-width: 375px) 
+    {
+        body
+        {
+            width: 1330px;
+        }
+        .main-container
+        {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            min-height: 600px;
+        }
+        
+        .row2{
+            width: 100%;
+            display: flex;
+            align-items:center ;
+            flex-wrap:wrap;
+            
+        }
+        
+    }

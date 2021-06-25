@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "RobotoSlab-Regular";
+    font-weight: 500;
+    src: url('/myFonts/static/RobotoSlab-Regular.ttf');
+    }
+    body
+    {
+        width: 375px;
+        margin: 0px auto;
+        max-width: 100%;
+        font-family: "RobotoSlab-Regular";
+        font-size :16px;
+    }
+    .main-container
+    {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    article
+    {
+        background-color: rgb(236, 236, 236);
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .path
+    {
+        text-decoration: none;
+        color: gray;
+    }
+    h4{
+        color: gray;
+
+    }
+    .editProject, .addTask, .notes input[type="submit"],.back
+    {
+        text-decoration: none;
+        background-color: #47cdff;
+        border: 1px solid #47cdff;
+        border-radius: 5px;
+        width: 90px;
+        padding: 2px;
+        color: white;
+        margin-left: 10px;
+    }
+    .editProject{
+        margin-right: 35px;
+    }
+    .row1{
+        width: 100%;
+        margin: 8px;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .row1 div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .row2{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .tasks input[type="text"]{
+        width: 90%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding: 7px;
+        border: 1px solid white;
+    }
+    .tasks input[type="checkbox"]{
+        width: 1.3em;
+        height: 1.3em;
+        background-color: white;
+        border-radius: 20%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        outline: none;
+        margin-left: -35px;
+
+    }
+    .notes textarea{
+        width:90%;
+        margin-bottom: 12px;
+        border-radius: 5px;
+        border: 1px solid white;
+        padding: 7px;
+    }
+    .notes input[type="submit"]
+    {
+        margin-right: 10%;
+        float: right;
+    }
+    .footer{
+        display: flex;
+        align-items:center ;
+        margin-top: 55px;
+        text-align: center;
+    }
+    aside
+    {
+        background-color: rgb(240, 240, 240);
+        padding: 8px;
+    }
+    .footer{
+        display: flex;
+        align-items:center ;
+        margin-top: 55px;
+        text-align: center;
+    }
+    @media screen and (min-width: 375px) 
+    {
+        body
+        {
+            width: 1330px;
+        }
+        .main-container
+        {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            min-height: 600px;
+        }
+        .row2{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
